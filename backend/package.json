@@ -1,0 +1,13 @@
+{
+  "name": "apiboladecristal",
+  "version": "1.0.0",
+  "description": "api com dicas randomicas da bola de cristal em mais de um idioma",
+  "main": "index.js",
+  "author": "Paula Ribeiro ",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

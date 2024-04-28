@@ -1,0 +1,10 @@
+@font-face {
+  font-family: minhaFonte;
+  src: url(Sirukota.ttf);
+ }
+body {
+   margin: 0;
+   font-family: minhaFonte;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }

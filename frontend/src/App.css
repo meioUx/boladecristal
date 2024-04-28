@@ -1,0 +1,162 @@
+/* Estilos para o fundo */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.5) 0%, rgba(0, 123, 255, 0.3) 50%, rgba(0, 123, 255, 0) 100%),
+    linear-gradient(to bottom, #007bff, #6c88e0, #b2c3ff);
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.bola-cristal {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #FF6B6B, #FFB86C, #FFF56E, #C7FF6D, #64FFDA, #6BFFF4, #6E6EFF, #9A6CFF, #FF6EFF, #FF6C99);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px darkslategray;
+  
+}
+
+.bola-cristal::before,
+.bola-cristal::after {
+  content: "";
+  position: absolute;
+  background-color: #8C7853;
+  background-image: linear-gradient(to bottom, #553311, #8C7853);
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  border-radius: 50% 50% 0 0; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bola-cristal::before {
+  width: 80%;
+  height: 15%;
+  top: 90%;
+  left: 10%;
+  
+  transform-origin: bottom;
+}
+
+.bola-cristal::after {
+  width: 93%;
+  height: 16%;
+  top: 100%;
+  left: 5%;
+ 
+  transform-origin: bottom;
+}
+
+.bola-cristal::before:after,
+.bola-cristal::after:after {
+  content: "";
+  position: absolute;
+  background-color: #C0A883;
+  width: 100%;
+  height: 10px;
+  top: 5px;
+  left: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.bola-cristal::before:before,
+.bola-cristal::after:before {
+  content: "";
+  position: absolute;
+  background-color: #C0A883;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  left: 5px;
+  border-radius: 0 50% 50% 50%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+ 
+  
+  .botaofr {
+  width: 90px;
+  height: 20px;
+  margin-top: 10px;
+    background-image: linear-gradient(to right, #58636d, #6d6a6a, #424242);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+  }
+
+  .botaoen {
+    width: 90px;
+  height: 20px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #58636d, #6d6a6a, #424242);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .botaopt {
+    width: 90px;
+  height: 20px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #58636d, #6d6a6a, #424242);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+
+
+  
