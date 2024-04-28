@@ -3,6 +3,8 @@ import './App.css';
 import axios from 'axios';
 import Lottie from 'react-lottie';
 import animationData from './Animation - 1714314587311.json'; // substitua 'animation.json' pelo seu arquivo de animação
+import { logEvent } from 'firebase/analytics';
+import { analytics } from './config/firebase';
 
 function App() {
   const [frase, setFrase] = useState("Clique aqui");
@@ -13,6 +15,7 @@ function App() {
     if (language) {
       setTimeout(fetchData, 2000); // Tempo de espera de 3 segundos antes de carregar os dados
     }
+    logEvent(analytics, 'pagina-inicial');
   }, [language]);
 
   async function fetchData() {
