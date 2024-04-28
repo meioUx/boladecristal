@@ -8,7 +8,7 @@ function App() {
   const [language, setLanguage] = useState()
 
   async function getdata() {
-    const response = await axios.get("https://boladecristal-1.onrender.com" + language)
+    const response = await axios.get("https://boladecristal-1.onrender.com/" + language)
     console.log(response.data)
     setFrase(response.data.phrase)
   }
