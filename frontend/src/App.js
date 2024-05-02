@@ -5,6 +5,8 @@ import Lottie from 'react-lottie';
 import animationData from './Animation - 1714314587311.json'; // substitua 'animation.json' pelo seu arquivo de animação
 import { logEvent } from 'firebase/analytics';
 import { analytics } from './config/firebase';
+import nevoa1 from './1.gif'
+import nevoa2 from './2.gif'
 
 function App() {
   const [frase, setFrase] = useState("Clique aqui");
@@ -45,11 +47,20 @@ function App() {
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
+
+
   };
 
   return (
     <div className="App">
+      <div className="cloud1">
+        <img src={nevoa1} /> </div>
+
+      <div className="cloud2">
+        <img src={nevoa2} /> </div>
+
       <div className="bola-cristal">
+
         <div>
           {!language ?
             <>
@@ -68,6 +79,7 @@ function App() {
               )}
             </div>
           }
+
         </div>
       </div>
     </div>
