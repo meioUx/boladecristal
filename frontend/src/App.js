@@ -18,7 +18,7 @@ function App() {
       setTimeout(fetchData, 2000); // Tempo de espera de 3 segundos antes de carregar os dados
     }
     logEvent(analytics, 'pagina-inicial');
-  }, [language]);
+  }, [fetchData, language]);
 
   async function fetchData() {
     setIsLoading(true);

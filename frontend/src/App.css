@@ -12,7 +12,25 @@
   position: relative;
 }
 
+.cloud1 {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  margin: 0px;
+  margin-bottom: 0px;
+  z-index: 1;
+  right: 30%;
+}
 
+.cloud2 {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  margin: 0px;
+  margin-bottom: 50;
+  left: -30%;
+  z-index: 2;
+}
 
 .bola-cristal {
   width: 370px;
@@ -23,7 +41,7 @@
   animation: gradient 5s ease infinite;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -33,7 +51,7 @@
   font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 4px darkslategray;
-  
+ 
 }
 
 .bola-cristal::before,
@@ -46,6 +64,7 @@
   background-position: 0% 0%;
   border-radius: 50% 50% 0 0; 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  
 }
 
 .bola-cristal::before {
@@ -157,19 +176,4 @@
   }
   
 
-.cloud1 {
-  position: absolute;
-  bottom: 0;
-  width: 20px;
-  margin: 0px;
-  margin-bottom: 50;
-}
 
-.cloud2 {
-  position: absolute;
-  bottom: 0;
-  width: 20px;
-  margin: 0px;
-  margin-bottom: 50;
-  left: -150px;
-}
